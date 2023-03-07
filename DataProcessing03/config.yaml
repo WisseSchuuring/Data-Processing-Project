@@ -1,0 +1,15 @@
+#configfile config.yaml
+
+
+genome: data/A
+ext : .fa
+samples:
+    A : /data/A.bam
+    B : /data/B.bam
+    C : /data/C.bam
+    D : /data/D.bam
+    E : /data/E.bam
+    F : /data/F.bam
+    G : /data/G.bam
+    H : /data/H.bam
+    I : /data/I.bam
