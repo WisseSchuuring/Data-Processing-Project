@@ -1,0 +1,16 @@
+datadir = '/commons/Themas/Thema11/Dataprocessing/WC04/data/'
+
+rule all:
+    """ final rule """
+    input: 'result/heatmap.jpg'
+
+
+rule make_heatmap:
+    """ rule that creates heatmap from gene expression counts"""
+    input:
+        datadir + 'gene_ex.csv'
+    output:
+         'result/heatmap.jpg'
+    script:
+        "../scripts/scripthist.R"
+
